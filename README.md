@@ -2,4 +2,4 @@
 
 Welcome to the EBDBBNB!
 
-![EBDB](/images/ebdb.jpg)
+![EBDB](public/images/ebdb.jpg)
