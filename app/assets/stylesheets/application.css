@@ -25,4 +25,9 @@ a, a:hover {
 
 body {
   background-color: #fafafa;
+  background-image: url('/images/winter.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 628px;
+  margin-top: 50px;
 }

@@ -4,6 +4,11 @@
   margin-top: 50px;
   margin-left: 500px;
   margin-right: 500px;
+  background-color: rgba(0,0,0,.6);
+}
+
+label {
+  color: #fafafa;
 }
 
 .form-div {
