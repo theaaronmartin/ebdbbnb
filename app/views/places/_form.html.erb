@@ -1,0 +1,34 @@
+<%= form_for @place do |f| %>
+<fieldset class="add-form">
+    <% if @place.errors.any? %>
+      <div>
+        <h2>
+          Please fix the following errors:
+        </h2>
+        <ul>
+          <% @place.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="form-div">
+      <%= f.label :location %><br>
+      <%= f.text_field :location %>
+    </div>
+
+    <div class="form-div">
+      <%= f.label :price %><br>
+      <%= f.text_area :price %>
+    </div>
+
+    <div class="form-div">
+      <%= f.label :dates_available %><br>
+      <%= f.text_area :dates_available %>
+    </div>
+
+    <div class="form-div">
+      <%= f.submit %>
+    </div>
+  </fieldset>
+<% end %>
