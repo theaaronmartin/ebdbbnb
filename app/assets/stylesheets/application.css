@@ -14,6 +14,15 @@
  *= require_self
  */
 
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #9dc8ea;
+}
+
 body {
   background-color: #fafafa;
 }

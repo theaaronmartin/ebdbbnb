@@ -1,14 +1,22 @@
-<div>
-  <strong>Location</strong><br>
-  <%= @place.location %>
+<h1 class="location-h1">Come visit beautiful <%= @place.location %>!</h1>
+
+<div class="place-display">
+  <div>
+    <strong>Location</strong><br>
+    <%= @place.location %>
+  </div>
+
+  <div>
+    <strong>Price</strong><br>
+    <%= @place.price %>
+  </div>
+
+  <div>
+    <strong>Dates Available</strong><br>
+    <%= @place.dates_available %>
+  </div>
 </div>
 
-<div>
-  <strong>Price</strong><br>
-  <%= @place.price %>
-</div>
-
-<div>
-  <strong>Dates Available</strong><br>
-  <%= @place.dates_available %>
-</div>
+<a href="/places">
+<button id="add-button" href="/places" type="button" name="add-button" class="add-button">Back to Home</button>
+</a>

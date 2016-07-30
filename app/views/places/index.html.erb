@@ -2,9 +2,18 @@
   <div class="winterscape">
     <h1 class="main-h1">Welcome to the EBDBBnB!</h1>
     <h2 class="main-h2">The Eskimo Brothers Database Bed &amp; Breakfast</h2>
+    <div class="add-place">
+      <a href="/places/new">
+      <button id="add-button" href="/places/new" type="button" name="add-button" class="add-button">Add a Place</button>
+      </a>
+      <table class="display-table">
+        <% @places.each do |place| %>
+          <tr class="places-table">
+            <td class="place-table"><%= place.location %></td>
+            <td><%= link_to 'Show', place_path(place) %> <%= link_to 'Edit', edit_place_path(place) %> <%= link_to 'Delete', place_path(place), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
   </div>
-</div>
-
-<div class="add-place">
-  <button type="button" name="add-button" class="add-button"><%= link_to 'Add a Place', new_place_path %></button>
 </div>

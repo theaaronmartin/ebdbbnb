@@ -11,6 +11,17 @@
   margin-left: 25px;
 }
 
+.location-h1 {
+  font-family: 'Lato', sans-serif;
+  color: #9dc8ea;
+  margin-top: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
 .form-h1 {
   margin-top: 50px;
 }
@@ -27,4 +38,71 @@
   background-position: center;
   height: 628px;
   margin-top: 50px;
+}
+
+.add-place {
+  margin-top: 35px;
+  margin-left: 560px;
+  margin-right: 560px;
+  text-align: center;
+}
+
+.add-place a:hover {
+  text-decoration: none;
+}
+
+#add-button {
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  border-color: #333;
+  background-color: #333;
+  text-decoration: none;
+  color: #fafafa;
+  margin: auto;
+  display: block;
+  margin-top: 3em;
+}
+
+#add-button:focus {
+  outline: none;
+}
+
+#add-button:hover {
+  background-color: #fafafa;
+  border-color: #f0f0f0;
+  color: #9dc8ea;
+  text-decoration: none;
+}
+
+#add-button a:hover {
+  text-decoration: none;
+}
+
+.place-display {
+  margin-top: 3em;
+  text-align: center;
+  border: 1px solid #9dc8ea;
+  margin-left: 550px;
+  margin-right: 550px;
+  padding: 25px;
+}
+
+.display-table {
+  margin-left: -200px;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  width: 600px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+td {
+  padding: 15px;
+  text-align: right;
+}
+
+.place-table {
+  text-align: left;
+  color: #fafafa;
 }
