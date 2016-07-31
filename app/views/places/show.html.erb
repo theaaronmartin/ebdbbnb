@@ -17,6 +17,10 @@
   </div>
 </div>
 
+<a href="/places/<%= @place.id %>/reviews/new">
+<button id="add-button" href="/places" type="button" name="add-button" class="add-button">Add a Review</button>
+</a>
+
 <a href="/places">
-<button id="add-button" href="/places" type="button" name="add-button" class="add-button">Back to Home</button>
+<button id="add-button" href="/places/<%= @place.id %>/reviews/new" type="button" name="add-button" class="add-button">Back to Home</button>
 </a>

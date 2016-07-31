@@ -1,10 +1,12 @@
 class PlacesController < ApplicationController
   def index
     @places = Place.all
+    @reviews = Review.all
   end
 
   def show
     @place = Place.find(params[:id])
+    @review = @place.reviews
   end
 
   def new
@@ -31,6 +33,13 @@ class PlacesController < ApplicationController
       else
         render :edit
       end
+  end
+
+  def destroy
+    @place = Place.find(params[:id])
+    @place.destroy
+
+    redirect_to places_path
   end
 
   private
