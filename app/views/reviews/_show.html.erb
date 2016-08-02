@@ -1,8 +1,9 @@
-<table class="display-table">
+<table class="reviews-table">
   <% @reviews.each do |review| %>
     <tr class="places-table">
       <td class="place-table"><%= review.reviewer_name %></td>
-      <td class="place-table"><%= review.rating %></td>
-      <td><%= link_to 'Show', review_path(review) %><%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td class="place-table">Rating: <%= review.rating %></td>
+      <td class="place-table">Location: <%=  %></td> <%# TODO:  %>
+      <td><%= link_to 'Show', review_path(review) %> <%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>

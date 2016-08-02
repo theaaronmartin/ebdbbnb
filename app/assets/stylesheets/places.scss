@@ -6,7 +6,17 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 60px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.show-h1 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
   margin-right: 25px;
   margin-left: 25px;
 }
@@ -27,13 +37,13 @@
 }
 
 .main-h2 {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
   color: #444;
 }
 
 .winterscape {
-  background-image: url('/images/winter.jpg');
+  // background-image: url('/images/winter.jpg');
   background-size: cover;
   background-position: center;
   height: 628px;
@@ -62,7 +72,7 @@
   margin: auto;
   display: block;
   margin-top: 3em;
-  margin-bottom: -2em;
+  margin-bottom: 1em;
 }
 
 #add-button:focus {
@@ -70,9 +80,9 @@
 }
 
 #add-button:hover {
-  background-color: #fafafa;
+  background-color: #9dc8ea;
   border-color: #f0f0f0;
-  color: #9dc8ea;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -108,4 +118,12 @@ td {
 .place-table {
   text-align: left;
   color: #fafafa;
+}
+
+span#n {
+  text-transform: lowercase;
+}
+
+.show-buttons {
+  list-style: none;
 }

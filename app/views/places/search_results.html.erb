@@ -1,0 +1,9 @@
+<h1 class="main-h1">Search Results for Places</h1>
+
+<table>
+  <% @place.each do |place| %>
+    <tr>
+      <td><%= place.rating %></td>
+    </tr>
+  <% end %>
+</table>

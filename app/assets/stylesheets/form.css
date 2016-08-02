@@ -15,3 +15,7 @@ label {
   margin: 10px;
   resize: none;
 }
+
+input {
+  width: 100%;
+}

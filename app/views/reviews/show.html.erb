@@ -1,0 +1,13 @@
+<h1 class="main-h1">Review for <%= @place.location %></h1>
+
+<table class="reviews-table" style="margin-left: 350px;">
+    <tr class="places-table">
+      <td class="place-table">Name: <%= @review.reviewer_name %></td>
+      <td class="place-table">Review: <%= @review.description %></td>
+      <td class="place-table">Rating: <%= @review.rating %></td>
+    </tr>
+</table>
+
+    <a href="/places">
+    <button id="add-button" href="/places/<%= @place.id %>/reviews/new" type="button" name="add-button" class="add-button">Back to Home</button>
+    </a>

@@ -1,3 +1,23 @@
 // Place all the styles related to the Reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.reviews-table {
+  margin-left: -200px;
+  margin-top: 50px;
+  margin-bottom: 2em;
+  border: 1px solid #fff;
+  width: 600px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.poop-table {
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 2em;
+  border: 1px solid #fff;
+  width: 600px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, .6);
+}

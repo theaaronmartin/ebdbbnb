@@ -1,4 +1,4 @@
-<h1 class="main-h1">Come visit beautiful <%= @place.location %>!</h1>
+<h1 class="show-h1">Come visit beautiful <%= @place.location %>!</h1>
 
 <div class="place-display">
   <div>
@@ -17,10 +17,21 @@
   </div>
 </div>
 
-<a href="/places/<%= @place.id %>/reviews/new">
-<button id="add-button" href="/places" type="button" name="add-button" class="add-button">Add a Review</button>
-</a>
-
-<a href="/places">
-<button id="add-button" href="/places/<%= @place.id %>/reviews/new" type="button" name="add-button" class="add-button">Back to Home</button>
-</a>
+<div>
+  <ul class="row">
+    <li class="col-md-6 show-buttons">
+      <a href="/places/<%= @place.id %>/reviews/new">
+      <button id="add-button" href="/places" type="button" name="add-button" class="add-button">Add a Review</button>
+      </a>
+    </li>
+    <li class="col-md-6 show-buttons">
+      <a href="/places">
+      <button id="add-button" href="/places/<%= @place.id %>/reviews/new" type="button" name="add-button" class="add-button">Back to Home</button>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="add-place">
+  <h2 class="main-h2">Reviews</h2>
+  <%= render 'reviews/show' %>
+</div>

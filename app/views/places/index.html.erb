@@ -1,6 +1,6 @@
 <div>
-  <div class="winterscape">
-    <h1 class="main-h1">Welcome to the EBDBBnB!</h1>
+  <div>
+    <h1 class="main-h1">Welcome to the EBDBB<span id="n">n</span>B!</h1>
     <h2 class="main-h2">The Eskimo Brothers Database Bed &amp; Breakfast</h2>
     <div class="add-place">
       <a href="/places/new">
@@ -14,8 +14,8 @@
           </tr>
         <% end %>
       </table>
+      <h2 class="main-h2">Reviews</h2>
+      <%= render 'reviews/show' %>
     </div>
-    <h2 class="main-h2">Reviews</h2>
-    <%= render 'reviews/show' %>
   </div>
 </div>

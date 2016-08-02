@@ -6,7 +6,7 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find(params[:id])
-    @review = @place.reviews
+    @reviews = @place.reviews
   end
 
   def new
@@ -40,6 +40,13 @@ class PlacesController < ApplicationController
     @place.destroy
 
     redirect_to places_path
+  end
+
+  def search
+  end
+
+  def search_results
+    @place = Place.where("name like ?", "%#{params[:query]}%")
   end
 
   private
