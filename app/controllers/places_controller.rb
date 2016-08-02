@@ -42,11 +42,8 @@ class PlacesController < ApplicationController
     redirect_to places_path
   end
 
-  def search
-  end
-
   def search_results
-    @place = Place.where("name like ?", "%#{params[:query]}%")
+    @place = Place.where("location like ?", "%#{params[:query]}%")
   end
 
   private

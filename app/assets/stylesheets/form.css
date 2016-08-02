@@ -17,5 +17,15 @@ label {
 }
 
 input {
-  width: 100%;
+  /*width: 100%;*/
+}
+
+#search {
+  margin-top: 15em;
+  margin-left: 35em;
+}
+
+.search-btn {
+  margin-left: 47em;
+  margin-top: -5.5em;
 }

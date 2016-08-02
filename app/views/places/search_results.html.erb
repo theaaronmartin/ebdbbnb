@@ -3,7 +3,8 @@
 <table>
   <% @place.each do |place| %>
     <tr>
-      <td><%= place.rating %></td>
+      <td><%= place.location %></td>
+      <td><%= link_to 'Show', place_path(place) %></td>
     </tr>
   <% end %>
 </table>
